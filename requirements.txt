@@ -1,0 +1,5 @@
+panel
+langchain
+langchain-community
+crewai
+python-dotenv
