@@ -22,7 +22,7 @@ These agents work collaboratively within a responsive web interface to provide r
 - **Python Installation**: Make sure you have Python 3.10.11 or higher installed. [Download Python](https://www.python.org/downloads/)
 - **Virtual Environment**: Usage of a Python virtual environment is recommended for managing dependencies. [Learn about virtual environments](https://docs.python.org/3/tutorial/venv.html)
 - **Ollama Installation**: [Ollama must be installed](https://ollama.com/) as part of the LangChain libraries. Ensure all dependencies for Ollama are correctly installed. `crewai_panel.py` uses mistral which can be installed running this command: `ollama run mistral`
-- **SERP API Key**: An API key for the SERP service. Ensure you have the API key configured as an environment variable. Sign up and get a key at [SERP](https://serper.dev/).
+- **SERP API Key**: An API key for the SERP service. Ensure you have the API key configured as an environment variable. Sign up and get a key at [SERP](https://serper.dev/). (Optional)
 - **API Keys**: Ensure you have the necessary API keys configured as environment variables, as detailed in the `.env` file instructions.
 - **Git**: Optional but recommended for cloning the repository. [Install Git](https://git-scm.com/downloads)
 

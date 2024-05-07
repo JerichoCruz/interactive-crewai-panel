@@ -15,20 +15,22 @@ import os
 from dotenv import load_dotenv
 from crewai.agents import CrewAgentExecutor
 
-# Load environment variables
-load_dotenv()
+# # Optional: Uncomment below if you want to use serper to allow your agent(s) to use google searches.
 
-# Set API key from environment variable in the .env file
-# To get your API key for free, visit: https://serper.dev/
-os.environ["SERPER_API_KEY"] = os.getenv('SERPER_API_KEY')
+# # Load environment variables
+# load_dotenv()
 
-search = GoogleSerperAPIWrapper()
+# # Set API key from environment variable in the .env file
+# # To get your API key for free, visit: https://serper.dev/
+# os.environ["SERPER_API_KEY"] = "os.getenv('SERPER_API_KEY')"
 
-search_tool = Tool(
-    name="Scrape Google Searches",
-    func=search.run,
-    description="Ask the agent to search the internet using Google.",
-)
+# search = GoogleSerperAPIWrapper()
+
+# search_tool = Tool(
+#     name="Scrape google searches",
+#     func=search.run,
+#     description="useful for when you need to ask the agent to search the internet",
+# )
 
 # Custom function to handle human inputs in the agent-executor workflow
 def custom_ask_human_input(self, final_answer: dict) -> str:
@@ -120,7 +122,7 @@ marketer = Agent(
 		""",
     # verbose=True,
     allow_delegation=False,
-    tools=[search_tool], # Allows agent to use google search.
+    # tools=[search_tool], # Allows agent to use google search.
     llm=llm,
     callbacks=[MyCustomHandler("Marketer")],
 )
