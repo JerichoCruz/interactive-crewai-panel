@@ -1,5 +1,7 @@
 # Interactive CrewAI Panel
 
+![Crew AI + Ollama + Panel Logo](https://i.imgur.com/RdQciiT.png)
+
 This project leverages the CrewAI framework and Panel library to create an interactive web application facilitating dynamic interaction between human users and AI agents. It's designed to analyze and strategize business processes with AI insights and human expertise.
 
 ## What This App Does
